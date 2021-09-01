@@ -26,7 +26,7 @@ let loadMusic = (audioIndex) => {
 }
 
 playPause.addEventListener("click", () => {
-    loadMusic(audioIndex);
+    
     if (musicStatus) {
         pauseMusic();
 
