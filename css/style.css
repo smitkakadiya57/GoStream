@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    
+font-family: 'Source Serif Pro', serif;
+}
+.nav_bar{
+    /* border: 2px solid red; */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: 0 0  0.4rem rgb(90, 84, 84) ;
+    margin-bottom: 5%;
+}
+.nav_bar h1 {
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0 0 0.2rem black;
+    background: none;
+}
+.music-player{
+ /* border: 2px solid green ; */
+ z-index: 2;
+ display: flex;
+ flex-wrap: nowrap;
+ border-radius: 1rem;
+ width: 80%;
+ margin: auto;
+ box-shadow: 0 0.05rem 0.4rem  black ;
+ overflow: hidden;
+ margin-bottom: 2rem;
+ background: rgba(255, 255, 255, 0.781);
+}
+.music-left{
+height: 10rem;
+overflow: hidden;
+padding: 1rem;
+background-image: linear-gradient( to bottom right, rgb(0, 4, 255),rgb(4, 15, 65));
+
+}
+.music-left img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+.music-right{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+   
+    
+}
+.title{
+font-size: 1.5rem;
+
+}
+.artist{
+    font-size: 1rem;
+ 
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+
+}
+.music-player .music-right .progress-area{
+box-shadow: 0rem 0rem 0.5rem rgb(128, 128, 128);
+height: 0.5rem;
+width:100%;
+border-radius: 0.1rem;
+
+
+}
+.music-right .progress-bar{
+ background-image: linear-gradient( to  right, rgb(13, 96, 134),rgb(82, 108, 223));
+height: 100%;
+width: 100%;
+}
+.timer{
+    display: flex;
+    justify-content: space-between;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.material-icons{
+color: rgb(5, 5, 77);
+
+}
+
+.controls :nth-child(3){
+    font-size: 3rem;
+    border-radius: 50%;
+    background: rgb(5, 5, 77);
+    color: white;
+}
+
+.controls :nth-child(2),.controls :nth-child(4){
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.controls :nth-child(1),.controls :nth-child(5){
+    font-size: 1.5rem;
+}
+
+.footer{
+    background:none;
+    text-align: center;
+    height: 5rem;
+    margin-top: 5rem;
+}
+.footer h2{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    background: none;
+    text-shadow: 0 0 0.2rem black;
+    font-family: 'Klee One', cursive;
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 10px;
+    }
+    .music-player{
+        width: 90%;
+    }
+    .play-list{
+        width: 90%;
+    }
+}
